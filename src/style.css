@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Signature palette: warm canopy fabric + deep event-night ambience */
+  --color-canvas: #FBF6EE;      /* ivory canvas - main light bg */
+  --color-card: #FFFDF9;        /* card surface, slightly lifted from canvas */
+  --color-ink: #21201C;         /* charcoal ink - primary text */
+  --color-ink-soft: #6B6459;    /* muted text on light */
+  --color-night: #0F3D3E;       /* deep teal night - dark section bg */
+  --color-night-soft: #14504F;  /* lifted surface on dark */
+  --color-mist: #CFE3DE;        /* soft text on dark */
+  --color-gold: #C9973B;        /* ember gold - primary accent */
+  --color-gold-soft: #E4C989;   /* light gold for dark bg accents */
+  --color-maroon: #7A2E32;      /* pelamin maroon - secondary accent */
+  --color-line: #E4DCCB;        /* hairline border on canvas */
+
+  --font-display: 'Fraunces', ui-serif, Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-utility: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
