@@ -2,7 +2,7 @@
 import { ref, onMounted } from 'vue'
 
 // TODO: replace with real sales WhatsApp number (format: 60123456789, no +/spaces)
-const WHATSAPP_NUMBER = '60177547847'
+const WHATSAPP_NUMBER = '60123456789'
 const waLink = (msg: string) =>
   `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`
 

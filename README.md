@@ -7,4 +7,4 @@
 
 [ ] Fasa 4: Kalendar Tempahan & Semakan Stok Inventori
 
-[ ] Fasa 5: Penjadualan Logistik & Penghantaran (Delivery/Setup)
+[ ] Fasa 5: Penjadualan Logistik & Penghantaran (Delivery/Setup) 

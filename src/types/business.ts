@@ -1,4 +1,3 @@
-// Types mengikut struktur jadual `business_profiles`
 export interface BusinessProfile {
   id: string
   user_id: string
@@ -15,14 +14,7 @@ export interface BusinessProfile {
   updated_at: string
 }
 
-// Data input untuk CREATE / INSERT profil baru
-// (Sebab 'id', 'user_id', 'created_at', & 'updated_at' dijana automatik oleh Supabase)
 export type BusinessProfileInput = Omit<
   BusinessProfile,
-  'id' | 'user_id' | 'created_at' | 'updated_at'
-> & {
-  logo_url?: string | null
-}
-
-// Data input untuk UPDATE / EDIT profil
-export type BusinessProfileUpdate = Partial<BusinessProfileInput>
+  'id' | 'user_id' | 'created_at' | 'updated_at' | 'logo_url'
+>
