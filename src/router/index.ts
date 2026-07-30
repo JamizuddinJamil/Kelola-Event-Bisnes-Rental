@@ -38,6 +38,12 @@ const router = createRouter({
       component: () => import('../views/DashboardPage.vue'),
       meta: { requiresAuth: true },
     },
+    {
+      path: '/dashboard/business-profile',
+      name: 'business-profile',
+      component: () => import('../views/BusinessProfilePage.vue'),
+      meta: { requiresAuth: true },
+    },
   ],
   scrollBehavior(to) {
     if (to.hash) return { el: to.hash, behavior: 'smooth' }
