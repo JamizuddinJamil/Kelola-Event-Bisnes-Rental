@@ -39,6 +39,12 @@ const router = createRouter({
       meta: { requiresAuth: true },
     },
     {
+      path: '/dashboard/customers',
+      name: 'customers',
+      component: () => import('../views/CustomersPage.vue'),
+      meta: { requiresAuth: true },
+    },
+    {
       path: '/dashboard/business-profile',
       name: 'business-profile',
       component: () => import('../views/BusinessProfilePage.vue'),
