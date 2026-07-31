@@ -16,6 +16,7 @@ async function handleSignOut() {
 
 const navItems = [
   { label: 'Lead', to: '/dashboard' },
+  { label: 'Customer', to: '/dashboard/customers' },
   { label: 'Sebut Harga', to: '/dashboard' },
   { label: 'Tempahan', to: '/dashboard' },
   { label: 'Inventori', to: '/dashboard' },
