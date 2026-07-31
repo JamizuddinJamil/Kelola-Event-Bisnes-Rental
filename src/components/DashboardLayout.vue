@@ -19,7 +19,7 @@ const navItems = [
   { label: 'Customer', to: '/dashboard/customers' },
   { label: 'Sebut Harga', to: '/dashboard' },
   { label: 'Tempahan', to: '/dashboard' },
-  { label: 'Inventori', to: '/dashboard' },
+  { label: 'Inventori', to: '/dashboard/inventory' },
   { label: 'Penghantaran', to: '/dashboard' },
   { label: 'Profil Bisnes', to: '/dashboard/business-profile' },
 ]
